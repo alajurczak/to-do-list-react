@@ -1,6 +1,6 @@
 # TO-DO List
 
-## DEMO: https://alajurczak.github.io/to-do-list/
+## DEMO: https://alajurczak.github.io/to-do-list-react/
 
 ![Page animation](https://github.com/alajurczak/to-do-list/blob/main/images/TO-DO%20list.gif?raw=true)
 
