@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = (props) => (
+const Buttons = ({tasks, hiddenDoneTask}) => (
     <div className="buttons">
-        {props.tasks.length > 0 && (
+        {tasks.length > 0 && (
             <React.Fragment>
-                <button className="button">{props.hiddenDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
-                <button className="button" disabled={props.tasks.every(({ done }) => done)}>
+                <button className="button">{hiddenDoneTask ? "Pokaż" : "Ukryj"} ukończone</button>
+                <button className="button" disabled={tasks.every(({ done }) => done)}>
                     Ukończ wszystkie
                 </button>
             </React.Fragment>
