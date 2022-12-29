@@ -1,40 +1,28 @@
-.section {
+import styled from "styled-components";
+
+export const StyledSection = styled.section`
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(232, 232, 232);
     margin-bottom: 5px;
-}
 
-@media (max-width: 767px) {
-    .section {
+    @media (max-width: 767px) {
         width: 100%;
     }
-}
+`;
 
-.section__header {
+export const Header = styled.div`
     display: grid;
     grid-template-columns: 1fr auto;
     border-bottom: 2px solid rgba(232, 232, 232);
-}
 
-@media (max-width: 767px) {
-    .section__header {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+`;
 
-.section__title {
+export const Title = styled.h2`
     padding: 20px;
     background-color: rgba(255, 255, 255);
     margin: 0;
     font-size: 20px;
-}
-
-.section__tasks {
-    list-style: none;
-    padding: 15px;
-    margin: 20px;
-}
-
-.section__buttons {
-    padding: 20px 40px 20px 20px;
-}
+`;
