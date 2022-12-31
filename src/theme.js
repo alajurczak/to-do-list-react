@@ -11,6 +11,7 @@ export const theme = {
         forestGreen: "#23b023",
         cinnabar: "#e93838",
         carnation: "#f26565",
+        gallery: "#eeeeee",
     },
     
     breakpoint: {
