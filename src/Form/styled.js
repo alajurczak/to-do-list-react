@@ -16,7 +16,7 @@ export const NewTask = styled.input`
     align-items: center;
     height: 40px;
     padding: 10px;
-    border: 2px solid rgba(232, 232, 232);
+    border: 2px solid ${({theme}) => theme.color.mercury};
 
     @media (max-width: 767px) {
         width: 100%;
@@ -24,8 +24,8 @@ export const NewTask = styled.input`
 `;
 
 export const Button = styled.button`
-    background-color: rgba(0, 128, 128);
-    color: rgba(255, 255, 255);
+    background-color: ${({theme}) => theme.color.teal};
+    color: ${({theme}) => theme.color.white};
     border: none;
     padding: 10px;
     height: 40px;
@@ -33,12 +33,12 @@ export const Button = styled.button`
     transform: scale(1.05);
 
     &:hover {
-        background-color: rgb(12, 160, 160);
+        background-color: ${({theme}) => theme.color.blueChill};
         cursor: pointer;
     };
 
     &:active {
-        background-color: rgb(12, 160, 160);
-        text-decoration: underline solid rgba(0, 128, 128);
+        background-color: ${({theme}) => theme.color.blueChill};
+        text-decoration: underline solid ${({theme}) => theme.color.teal};
     }
 `;
