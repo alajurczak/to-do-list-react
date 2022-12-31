@@ -30,11 +30,11 @@ export const Button = styled.button`
     padding: 10px;
     height: 40px;
     transition: 0.5s;
-    transform: scale(1.05);
 
     &:hover {
         background-color: ${({theme}) => theme.color.blueChill};
         cursor: pointer;
+        transform: scale(1.05);
     };
 
     &:active {
