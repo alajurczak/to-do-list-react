@@ -26,7 +26,7 @@ export const Content = styled.p`
     `}
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
     color: white;
     width: 30px;
     height: 30px;
@@ -36,21 +36,20 @@ export const Button = styled.button`
     &:hover {
         cursor: pointer;
     }
+`;
 
-    ${({ toggleDone }) => toggleDone && css`
-        background-color: rgb(20, 132, 20);
+export const ToggleDoneButton = styled(Button)`
+    background-color: rgb(20, 132, 20);
 
-        &:hover {
-            background-color: rgb(35, 176, 35);
-        };
+    &:hover {
+        background-color: rgb(35, 176, 35);
+};
+`;
 
-    `}
+export const RemoveButton = styled(Button)`
+    background-color: rgb(233, 56, 56);
 
-    ${({remove}) => remove && css`
-        background-color: rgb(233, 56, 56);
-
-        &:hover {
-            background-color: rgb(242, 101, 101);
-        };
-    `}
+    &:hover {
+        background-color: rgb(242, 101, 101);
+};
 `;
