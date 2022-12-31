@@ -6,7 +6,7 @@ export const StyledButtons = styled.div`
 
 export const Button = styled.button`
     background-color: transparent;
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     margin-left: 20px;
     border-color: transparent;
     font-size: 15px;
@@ -19,14 +19,14 @@ export const Button = styled.button`
     };
 
     &:hover {
-        color: rgb(22, 186, 186);
+        color: ${({ theme }) => theme.color.java};
     };
 
     &:active {
-        color: rgb(47, 229, 229);
+        color: ${({ theme }) => theme.color.turquoise};
     };
 
     &:disabled {
-        color: #ccc
+        color: ${({ theme }) => theme.color.silver};
     };
 `;
