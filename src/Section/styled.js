@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
     border: 2px solid ${({theme}) => theme.color.mercury};
     margin-bottom: 5px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         width: 100%;
     }
 `;
@@ -15,7 +15,7 @@ export const Header = styled.div`
     grid-template-columns: 1fr auto;
     border-bottom: 2px solid ${({theme}) => theme.color.mercury};
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;

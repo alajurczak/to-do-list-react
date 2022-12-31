@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
     grid-gap: 20px;
     padding: 20px 20px 20px 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -18,7 +18,7 @@ export const NewTask = styled.input`
     padding: 10px;
     border: 2px solid ${({theme}) => theme.color.mercury};
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         width: 100%;
     }
 `;
