@@ -10,7 +10,7 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    border-bottom: 2px solid rgb(232, 232, 232);
+    border-bottom: 2px solid ${({theme}) => theme.color.mercury};
     padding: 5px 5px;
 
     ${({ hidden }) => hidden && css`
@@ -39,17 +39,17 @@ const Button = styled.button`
 `;
 
 export const ToggleDoneButton = styled(Button)`
-    background-color: rgb(20, 132, 20);
+    background-color: ${({theme}) => theme.color.bilbao};
 
     &:hover {
-        background-color: rgb(35, 176, 35);
+        background-color: ${({theme}) => theme.color.forestGreen};
 };
 `;
 
 export const RemoveButton = styled(Button)`
-    background-color: rgb(233, 56, 56);
+    background-color: ${({theme}) => theme.color.cinnabar};
 
     &:hover {
-        background-color: rgb(242, 101, 101);
+        background-color: ${({theme}) => theme.color.carnation};
 };
 `;
