@@ -6,11 +6,11 @@
 
 ## Used technologies:
 - HTML
-- CSS
-- JavaScript
-- BEM convension
-- normalize.css
-- Create React App
+- REACT.JS
+- WEBPACK
+- BABEL
+- STYLED COMPONENTS
+- REDUX
 
 ## Description
 This site presents a simple application for typing tasks.
