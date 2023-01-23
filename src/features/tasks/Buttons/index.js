@@ -3,7 +3,7 @@ import { StyledButtons, Button } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleHideDone, selectAreTasksEmpty, selectIsEveryTaskDone, selectHideDone, setAllDone } from "../tasksSlice";
 
-const Buttons = ({ setAllDone }) => {
+const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const hideDone = useSelector(selectHideDone);
