@@ -1,10 +1,10 @@
 import Tasks from "./features/tasks/Tasks";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { HashRouter, Link, Switch, Route } from "react-router-dom";
 import Author from "./features/author/Author";
 
 
 export default () => (
-    <BrowserRouter>
+    <HashRouter>
         <nav>
             <ul>
                 <li>
@@ -23,5 +23,5 @@ export default () => (
                 </Route>
             </Switch>
         </nav>
-    </BrowserRouter>
+    </HashRouter>
 );
