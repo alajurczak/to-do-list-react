@@ -1,6 +1,7 @@
-import Tasks from "./features/tasks/Tasks";
-import { HashRouter, Link, Switch, Route } from "react-router-dom";
-import Author from "./features/author/Author";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
+import { HashRouter, NavLink, Switch, Route, Redirect } from "react-router-dom";
+import AuthorPage from "./features/author/AuthorPage";
 
 
 export default () => (
@@ -8,18 +9,24 @@ export default () => (
         <nav>
             <ul>
                 <li>
-                    <Link to="/zadania">Zadania</Link>
+                    <NavLink activeClassName="active" to="/zadania">Zadania</NavLink>
                 </li>
                 <li>
-                    <Link to="/autor">O autorze</Link>
+                    <NavLink activeClassName="active" to="/autor">O autorze</NavLink>
                 </li>
             </ul>
             <Switch>
+                <Route path="/zadania/:id">
+                    <TaskPage />
+                </Route>
                 <Route path="/zadania">
-                    <Tasks />
+                    <TasksPage />
                 </Route>
                 <Route path="/autor">
-                    <Author />
+                    <AuthorPage />
+                </Route>
+                <Route path="/">
+                    <Redirect to="/zadania" />
                 </Route>
             </Switch>
         </nav>
