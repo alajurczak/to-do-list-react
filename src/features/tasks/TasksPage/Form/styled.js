@@ -4,22 +4,10 @@ export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 20px 0px 0px;
 
     @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
-    }
-`;
-
-export const NewTask = styled.input`
-    display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 10px;
-    border: 2px solid ${({theme}) => theme.color.mercury};
-
-    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
-        width: 100%;
     }
 `;
 
