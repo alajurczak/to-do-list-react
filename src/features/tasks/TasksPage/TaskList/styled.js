@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const TasksList = styled.ul`
     list-style: none;
@@ -10,7 +11,7 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    border-bottom: 2px solid ${({theme}) => theme.color.mercury};
+    border-bottom: 2px solid ${({ theme }) => theme.color.mercury};
     padding: 5px 5px;
 
     ${({ hidden }) => hidden && css`
@@ -39,17 +40,27 @@ const Button = styled.button`
 `;
 
 export const ToggleDoneButton = styled(Button)`
-    background-color: ${({theme}) => theme.color.bilbao};
+    background-color: ${({ theme }) => theme.color.bilbao};
 
     &:hover {
-        background-color: ${({theme}) => theme.color.forestGreen};
+        background-color: ${({ theme }) => theme.color.forestGreen};
 };
 `;
 
 export const RemoveButton = styled(Button)`
-    background-color: ${({theme}) => theme.color.cinnabar};
+    background-color: ${({ theme }) => theme.color.cinnabar};
 
     &:hover {
-        background-color: ${({theme}) => theme.color.carnation};
+        background-color: ${({ theme }) => theme.color.carnation};
 };
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    &:visited {
+        color: ${({ theme }) => theme.color.teal};
+    };
+    &:hover {
+        border-bottom: solid 1px teal;
+    };
 `;
