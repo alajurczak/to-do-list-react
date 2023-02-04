@@ -57,6 +57,8 @@ export const RemoveButton = styled(Button)`
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
+    
     &:visited {
         color: ${({ theme }) => theme.color.teal};
     };
