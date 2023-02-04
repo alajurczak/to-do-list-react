@@ -3,6 +3,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import { HashRouter, NavLink, Switch, Route, Redirect } from "react-router-dom";
 import AuthorPage from "./features/author/AuthorPage";
 import { StyledNavLink } from "./styled";
+import { toAuthor, toTask, toTasks } from "./routers";
 
 
 export default () => (
@@ -17,17 +18,17 @@ export default () => (
                 </li>
             </ul>
             <Switch>
-                <Route path="/zadania/:id">
+                <Route path={toTask()}>
                     <TaskPage />
                 </Route>
-                <Route path="/zadania">
+                <Route path={toTasks()}>
                     <TasksPage />
                 </Route>
-                <Route path="/autor">
+                <Route path={toAuthor()}>
                     <AuthorPage />
                 </Route>
                 <Route path="/">
-                    <Redirect to="/zadania" />
+                    <Redirect to={toTasks()} />
                 </Route>
             </Switch>
         </nav>
