@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const TasksList = styled.ul`
     list-style: none;
-    padding: 15px;
-    margin: 20px;
+    padding: 0px;
+    margin: 0px;
 `;
 
 export const Item = styled.li`
