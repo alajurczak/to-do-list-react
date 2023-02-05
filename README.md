@@ -20,7 +20,10 @@ In the tasks list:
 - You can delete the whole tasks 🗑️
 - You can hide tasks that are done 
 - You can mark all tasks as done ✅✅✅
-
+- You can add yours tasks 📝
+- You can download sample tasks if you want
+- In a separate tab you can read something about the author 🙌
+- You can read the details of your task 🔍
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
